@@ -12,6 +12,7 @@ html {
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: Poppins, Noto Sans, sans-serif;
+  
 }
 
 .text-start{
@@ -64,7 +65,8 @@ body {
   font-size: 0.94rem;
   text-align: center;
   line-height: 1.5;
-  background: #f8f8f8;
+  background-image: url(https://images.unsplash.com/photo-1566041510394-cf7c8fe21800?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80);
+  background-size: cover;
 }
 
 .img-profile{
@@ -130,25 +132,38 @@ img[alt="Linktree photo"] + h3 {
   margin-right: 16px;
 }
 
+
 /* Project */
 
 .project-activity{
   padding: 5px;
 }
 
-.project-card{
-  background-color: #e4e5e7;
-  padding: 10px;
-}
-
-
 .project-images img{
   max-width: 320px;
   width: 100%;
 }
 
+
+
+
 @media (min-width: 600px) {
   .linktree-nav ul {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  
+}
+
+@media (max-width: 600px){
+  .project-card{
+    background-color: #e4e5e7;
+    padding: 10px;
+  }
+  
+  
+  .project-images img{
+    max-width: 320px;
+    width: 100%;
   }
 }
