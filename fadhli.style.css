@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+
+*,
+*::before,
+::after {
+  padding: 0;
+  margin: 0;
+}
+
+p{
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: Poppins, Noto Sans, sans-serif;
+  
+}
+
+.text-start{
+  text-align: start;
+}
+
+.padding-vertical-10{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.margin-vertical-10{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.margin-vertical-20{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.margin-vertical-30{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.margin-vertical-50{
+  margin-top: 50px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.project-button{
+  color: white;
+  background-color: #f4d160;
+  padding: 5px;
+  border-radius: 25px;
+}
+
+.font-small{
+  font-size: 10px;
+}
+
+body {
+  font-size: 0.94rem;
+  text-align: center;
+  line-height: 1.5;
+  background-image: url(https://images.unsplash.com/photo-1566041510394-cf7c8fe21800?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80);
+  background-size: cover;
+}
+
+.img-profile{
+  object-fit: cover;
+  max-width: 150px;
+  height: 150px;
+  width: 100%;
+  border-radius: 50%;
+}
+
+main {
+  padding: 12vh 25px;
+}
+
+img[alt="Linktree photo"] {
+  --scale: 164px;
+  width: var(--scale);
+  height: var(--scale);
+  border-radius: 24px;
+}
+
+img[alt="Linktree photo"] + h3 {
+  margin: 16px 0 0px;
+}
+
+.linktree-nav {
+  margin: 40px auto 0;
+  width: 95%;
+  max-width: 700px;
+}
+
+.linktree-nav ul {
+  display: grid;
+  gap: 1rem;
+  list-style: none;
+}
+
+.linktree-nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.linktree-box {
+  display: flex;
+  align-items: center;
+  text-align: start;
+  padding: 12px 12px;
+  border: 1px solid #ebebeb;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.linktree-box .icon-box {
+  --scale: 56px;
+  width: var(--scale);
+  height: var(--scale);
+  font-size: 1.25rem;
+  background-color: #f5f8fd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  margin-right: 16px;
+}
+
+/* bertanya */
+.bertanya{
+  background: linear-gradient(135deg, rgb(21, 228, 52) 0%, rgba(13,164,35,1) 250%);
+  border-radius: 20px;
+  padding: 20px;
+  font-weight: 800;
+  color: white;
+  margin-top: 10%;margin-bottom: 10%;
+}
+
+/* Project */
+
+.project-activity{
+  padding: 5px;
+}
+
+.project-images img{
+  max-width: 320px;
+  width: 100%;
+}
+
+
+
+
+@media (min-width: 600px) {
+  .linktree-nav ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  
+}
+
+@media (max-width: 600px){
+  .project-card{
+    background-color: #e4e5e7;
+    padding: 10px;
+  }
+  
+  
+  .project-images img{
+    max-width: 320px;
+    width: 100%;
+  }
+}
